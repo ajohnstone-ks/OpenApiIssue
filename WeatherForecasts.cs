@@ -2,7 +2,7 @@
 using System.Runtime.Serialization;
 
 namespace OpenApiIssue;
-[CollectionDataContract(Name = "forecasts"), DataContract(Name = "forecasts")]
+[CollectionDataContract(Name = "forecasts")]
 public sealed class WeatherForecasts : Collection<WeatherForecast> {
 	public WeatherForecasts(IList<WeatherForecast> list) : base(list) { }
 

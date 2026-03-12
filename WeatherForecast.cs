@@ -6,7 +6,7 @@ namespace OpenApiIssue
     [DataContract(Name = "forecast")]
     public class WeatherForecast {
         [DataMember]
-        public DateOnly Date { get; set; }
+        public DateTime Date { get; set; }
 
         [DataMember]
         public int TemperatureC { get; set; }
